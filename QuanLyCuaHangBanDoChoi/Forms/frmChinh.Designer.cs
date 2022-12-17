@@ -31,19 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChinh));
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.btnBanSanPham = new System.Windows.Forms.Button();
+            this.btnTrangChu = new System.Windows.Forms.Button();
             this.btnNhapSanPham = new System.Windows.Forms.Button();
             this.btnThietLap = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
-            this.btnBanSanPham = new System.Windows.Forms.Button();
-            this.btnTrangChu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.picNhanVien = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -67,19 +69,59 @@
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
             this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLeft.Controls.Add(this.btnBanSanPham);
             this.panelLeft.Controls.Add(this.btnTrangChu);
             this.panelLeft.Controls.Add(this.btnNhapSanPham);
             this.panelLeft.Controls.Add(this.btnThietLap);
             this.panelLeft.Controls.Add(this.btnKhachHang);
             this.panelLeft.Controls.Add(this.btnNhanVien);
             this.panelLeft.Controls.Add(this.btnSanPham);
-            this.panelLeft.Controls.Add(this.btnBanSanPham);
             this.panelLeft.Controls.Add(this.panel2);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(215, 720);
             this.panelLeft.TabIndex = 0;
+            // 
+            // btnBanSanPham
+            // 
+            this.btnBanSanPham.AccessibleName = "banhang";
+            this.btnBanSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnBanSanPham.FlatAppearance.BorderSize = 0;
+            this.btnBanSanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnBanSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBanSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnBanSanPham.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
+            this.btnBanSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBanSanPham.Location = new System.Drawing.Point(-2, 138);
+            this.btnBanSanPham.Name = "btnBanSanPham";
+            this.btnBanSanPham.Size = new System.Drawing.Size(216, 60);
+            this.btnBanSanPham.TabIndex = 5;
+            this.btnBanSanPham.Text = "    Bán Sản Phẩm";
+            this.btnBanSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBanSanPham.UseVisualStyleBackColor = false;
+            this.btnBanSanPham.Click += new System.EventHandler(this.btnBanHang_Click);
+            // 
+            // btnTrangChu
+            // 
+            this.btnTrangChu.AccessibleName = "trangchu";
+            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnTrangChu.FlatAppearance.BorderSize = 0;
+            this.btnTrangChu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu.Location = new System.Drawing.Point(-2, 200);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(216, 60);
+            this.btnTrangChu.TabIndex = 3;
+            this.btnTrangChu.Text = "    Doanh Thu";
+            this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // btnNhapSanPham
             // 
@@ -116,7 +158,7 @@
             this.btnThietLap.Name = "btnThietLap";
             this.btnThietLap.Size = new System.Drawing.Size(215, 60);
             this.btnThietLap.TabIndex = 10;
-            this.btnThietLap.Text = "    Cài đặt";
+            this.btnThietLap.Text = "    Đổi Mật Khẩu";
             this.btnThietLap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThietLap.UseVisualStyleBackColor = false;
             this.btnThietLap.Click += new System.EventHandler(this.btnThietLap_Click);
@@ -181,46 +223,6 @@
             this.btnSanPham.UseVisualStyleBackColor = false;
             this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
-            // btnBanSanPham
-            // 
-            this.btnBanSanPham.AccessibleName = "banhang";
-            this.btnBanSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
-            this.btnBanSanPham.FlatAppearance.BorderSize = 0;
-            this.btnBanSanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnBanSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBanSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBanSanPham.ForeColor = System.Drawing.Color.White;
-            this.btnBanSanPham.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
-            this.btnBanSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBanSanPham.Location = new System.Drawing.Point(-2, 140);
-            this.btnBanSanPham.Name = "btnBanSanPham";
-            this.btnBanSanPham.Size = new System.Drawing.Size(216, 60);
-            this.btnBanSanPham.TabIndex = 5;
-            this.btnBanSanPham.Text = "    Bán Sản Phẩm";
-            this.btnBanSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBanSanPham.UseVisualStyleBackColor = false;
-            this.btnBanSanPham.Click += new System.EventHandler(this.btnBanHang_Click);
-            // 
-            // btnTrangChu
-            // 
-            this.btnTrangChu.AccessibleName = "trangchu";
-            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
-            this.btnTrangChu.FlatAppearance.BorderSize = 0;
-            this.btnTrangChu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
-            this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
-            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.Location = new System.Drawing.Point(-1, 200);
-            this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(216, 60);
-            this.btnTrangChu.TabIndex = 3;
-            this.btnTrangChu.Text = "    Doanh Thu";
-            this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTrangChu.UseVisualStyleBackColor = false;
-            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -275,6 +277,8 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.button9);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -292,13 +296,47 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_minimize_window_32px_1;
-            this.button1.Location = new System.Drawing.Point(901, 0);
+            this.button1.Location = new System.Drawing.Point(827, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(37, 46);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 9;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.fullscreen__1_;
+            this.button3.Location = new System.Drawing.Point(864, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(37, 46);
+            this.button3.TabIndex = 8;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.fullscreen;
+            this.button2.Location = new System.Drawing.Point(901, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 46);
+            this.button2.TabIndex = 6;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label4
             // 
@@ -490,7 +528,9 @@
         private System.Windows.Forms.Timer timerTime;
         private System.Windows.Forms.ImageList imageListIcon;
         private System.Windows.Forms.Panel panelControls;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnNhapSanPham;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

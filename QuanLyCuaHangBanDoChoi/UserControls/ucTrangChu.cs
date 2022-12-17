@@ -15,7 +15,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         }
         private void ucTrangChu_Load(object sender, EventArgs e)
         {
-            cboDoanhThu.SelectedIndex = 0;
+            cboDoanhThu.SelectedIndex = 1;
             cboTopSanPham1.SelectedIndex = 0;
             cboTopSanPham2.SelectedIndex = 0;
             btnRefresh.PerformClick();
@@ -620,6 +620,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         }
 
         private void cboDoanhThu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chartTopSP_Click(object sender, EventArgs e)
         {
 
         }

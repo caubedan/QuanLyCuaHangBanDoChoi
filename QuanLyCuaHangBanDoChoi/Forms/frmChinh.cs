@@ -78,18 +78,18 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             {
                 switch (ucName)
                 {
-                    case "ucTrangChu":
-                        {
-                            ucTrangChu ucTC = new ucTrangChu();
-                            ucTC.Dock = DockStyle.Fill;
-                            AddControlsIntoPanel(ucTC);
-                        }
-                        break;
                     case "ucSanPham":
                         {
                             ucQuanLySanPham ucSP = new ucQuanLySanPham();
                             ucSP.Dock = DockStyle.Fill;
                             AddControlsIntoPanel(ucSP);
+                        }
+                        break;
+                    case "ucTrangChu":
+                        {
+                            ucTrangChu ucTC = new ucTrangChu();
+                            ucTC.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucTC);
                         }
                         break;
                     case "ucNhapSanPham":
@@ -388,11 +388,6 @@ namespace QuanLyCuaHangBanDoChoi.Forms
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.WindowState=FormWindowState.Minimized;
-        }
-
         private void btnNhapSanPham_Click(object sender, EventArgs e)
         {
             Cursor = Cursors.AppStarting;
@@ -419,6 +414,27 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+       
+
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

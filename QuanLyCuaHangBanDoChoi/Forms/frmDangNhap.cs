@@ -25,10 +25,10 @@ namespace QuanLyCuaHangBanDoChoi.Forms
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
-            TopMost = true;
-            txtMatKhau.PasswordChar = '●';
+            //FormBorderStyle = FormBorderStyle.None;
+            //WindowState = FormWindowState.Maximized;
+            //TopMost = true;
+            //txtMatKhau.PasswordChar = '●';
 
             txtTenDangNhap.Visible = false;
             txtMatKhau.Visible = false;

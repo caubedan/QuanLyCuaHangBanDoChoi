@@ -95,6 +95,7 @@
             this.chartTopSP.Size = new System.Drawing.Size(486, 423);
             this.chartTopSP.TabIndex = 6;
             this.chartTopSP.Text = "Top 10 Sản Phẩm Bán Chạy";
+            this.chartTopSP.Click += new System.EventHandler(this.chartTopSP_Click);
             // 
             // chartDoanhThu
             // 
