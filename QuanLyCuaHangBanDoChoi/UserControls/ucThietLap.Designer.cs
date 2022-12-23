@@ -217,7 +217,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1226, 33);
             this.label3.TabIndex = 56;
-            this.label3.Text = "Thiết Lập";
+            this.label3.Text = "Đổi Mật Khẩu";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ucThietLap

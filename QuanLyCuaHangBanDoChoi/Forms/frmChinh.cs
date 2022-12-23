@@ -78,6 +78,13 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             {
                 switch (ucName)
                 {
+                    case "ucBanSanPham":
+                        {
+                            ucBanSanPham ucBH = new ucBanSanPham();
+                            ucBH.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucBH);
+                        }
+                        break;
                     case "ucSanPham":
                         {
                             ucQuanLySanPham ucSP = new ucQuanLySanPham();
@@ -99,13 +106,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                             AddControlsIntoPanel(ucNSP);
                         }
                         break;
-                    case "ucBanSanPham":
-                        {
-                            ucBanSanPham ucBH = new ucBanSanPham();
-                            ucBH.Dock = DockStyle.Fill;
-                            AddControlsIntoPanel(ucBH);
-                        }
-                        break;
+                    
                     case "ucNhanVien":
                         {
                             ucNhanVien ucNV = new ucNhanVien();
@@ -251,7 +252,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             }
             else
             {
-                panelLeft.Width = panelLeft.Width - 8;
+                //panelLeft.Width = panelLeft.Width - 6;
                 if (panelLeft.Width <= 64)
                 {
                     timerPanel.Stop();

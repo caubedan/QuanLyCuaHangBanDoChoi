@@ -21,7 +21,6 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
         private void ucBanHang_Load(object sender, EventArgs e)
         {
-
             LoadCboLocLoaiSP();
             LoadCboLocNCC();
             LoadDanhSachSanPhamTheoBoLoc(1);

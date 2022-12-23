@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\QuanLyCuaHangBanDoChoi\UserControls\ucBanSanPham.cs">
+      <Link>ucBanSanPham.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CTHDDL.cs" />
     <Compile Include="CTPNDL.cs" />
     <Compile Include="DataProvider.cs" />
